@@ -109,7 +109,7 @@ def getIP(intent_request):
         "interface" : interface_type
     }
     
-    ec2URI = 'http://3.93.80.42:5050/getIP'
+    ec2URI = 'http://X.X.X.X:5050/getIP'   #IP address of your EC2 Server 
     #resp = requests.get(ec2URI)
     resp = requests.post(ec2URI, json=data)
     if resp.status_code != 200:
